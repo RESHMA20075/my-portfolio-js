@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reshma Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f8f7ff;
+            color: #222;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: white;
+            box-shadow: 0 2px 10px #ddd;
+        }
+
+        nav h2 {
+            color: #7c3aed;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .home {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 60px 10%;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .content h3 {
+            color: #7c3aed;
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .content h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .content h2 {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #7c3aed;
+            color: white;
+            padding: 13px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .photo {
+            flex: 0 0 300px;
+            text-align: center;
+        }
+
+        .photo img {
+            width: 280px;
+            height: 340px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 25px;
+            border: 5px solid #7c3aed;
+            box-shadow: 0 10px 30px #0002;
+        }
+
+        section:not(.home) {
+            padding: 50px 10%;
+        }
+
+        section h2 {
+            color: #7c3aed;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #ddd;
+            line-height: 1.8;
+        }
+
+        .card a {
+            color: #7c3aed;
+            overflow-wrap: anywhere;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #7c3aed;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .home {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .content h1 {
+                font-size: 34px;
+            }
+
+            .photo img {
+                width: 220px;
+                height: 260px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>Reshma Portfolio</h2>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Hello, Welcome to My Portfolio!</h3>
+            <h1>I'm Reshma Radha Krishnan</h1>
+            <h2>B.Sc. Computer Science Student</h2>
+
+            <p>
+                I am a Computer Science student at
+                KG College of Arts and Science.
+                I am interested in programming,
+                web development, and learning new technologies.
+            </p>
+
+            <a href="#about" class="btn">Explore My Portfolio</a>
+        </div>
+
+        <div class="photo">
+            <img src="images/reshma.jpg"
+                 alt="Reshma Profile Photo">
+        </div>
+
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            I am a second-year B.Sc. Computer Science student.
+            I enjoy learning programming languages and developing
+            simple projects. My goal is to improve my technical
+            skills and become a skilled software professional.
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="card">
+            <h3>B.Sc. Computer Science</h3>
+            <p>KG College of Arts and Science</p>
+            <p>Currently in Second Year</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="card">
+            <p>C Programming</p>
+            <p>Java</p>
+            <p>Python</p>
+            <p>HTML and CSS</p>
+            <p>JavaScript</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="card">
+            <h3>1. The Mini Library Catalog</h3>
+            <p>
+                A C programming project to organize and
+                manage basic library catalog information.
+            </p>
+            <p>
+                GitHub:
+                <a href="https://github.com/RESHMA20075/1sem-Cprogram-Project-"
+                   target="_blank">
+                   View Project
+                </a>
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>2. Vehicle Service Reminder and Maintenance Tracker</h3>
+            <p>
+                A Java project designed to maintain vehicle
+                service details and track maintenance reminders.
+            </p>
+            <p>
+                GitHub:
+                <a href="https://github.com/RESHMA20075/VehicleServiceTrackerjava"
+                   target="_blank">
+                   View Project
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <section id="certification">
+        <h2>Certification</h2>
+        <div class="card">
+            Microsoft Azure Fundamentals
+        </div>
+    </section>
+
+    <section id="interests">
+        <h2>Interests</h2>
+        <div class="card">
+            Web Development | Problem Solving |
+            Personal Development
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="card">
+            <p>Email: 25bcs248@kgcas.com</p>
+            <p>Location: Coimbatore, Tamil Nadu</p>
+            <p>
+                GitHub:
+                <a href="https://github.com/RESHMA20075"
+                   target="_blank">
+                   My GitHub Profile
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Reshma Radha Krishnan | My Portfolio</p>
+    </footer>
+
+</body>
+</html>
